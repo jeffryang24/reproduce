@@ -43,5 +43,12 @@ A `type-check` script is also added to `package.json`, which runs TypeScript's `
 
 # Issue
 
-ID : 20181122-1
-Related : emotion, ssr, tsx, typescript, semantic ui, css
+ID: 20181122-1
+
+Description: The Semantic UI css is not hydrated to the page, so FOUC is appeared.
+
+Related: emotion, ssr, tsx, typescript, semantic ui, css
+
+Status: **Not Reproduced**
+
+Conclusion: Maybe there is an issue within the webpack config.
