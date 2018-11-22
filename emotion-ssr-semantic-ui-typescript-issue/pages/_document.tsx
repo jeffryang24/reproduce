@@ -16,7 +16,7 @@ declare module "next/document" {
 }
 
 export default class MyDocument extends Document {
-  static getInitialProps({ renderPage }: NextDocumentContext) {
+  public static getInitialProps({ renderPage }: NextDocumentContext) {
     const page = renderPage();
     const styles = extractCritical(page.html);
     return { ...page, ...styles };
@@ -30,7 +30,7 @@ export default class MyDocument extends Document {
     }
   }
 
-  render() {
+  public render() {
     return (
       <html>
         <Head>

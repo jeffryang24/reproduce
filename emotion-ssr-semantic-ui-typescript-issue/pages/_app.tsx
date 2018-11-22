@@ -16,7 +16,7 @@ if (typeof window !== 'undefined') {
 }
 
 export default class MyApp extends App {
-  static async getInitialProps({ Component, router, ctx }: NextAppContext) {
+  public static async getInitialProps({ Component, router, ctx }: NextAppContext) {
     let pageProps = {};
 
     if (Component.getInitialProps) {
@@ -26,7 +26,7 @@ export default class MyApp extends App {
     return { pageProps };
   }
 
-  render() {
+  public render() {
     const { Component, pageProps } = this.props;
 
     return (
