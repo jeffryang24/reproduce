@@ -15,6 +15,15 @@ module.exports = withTypescript(withCss({
         }
       }
     })
+    console.log(config.module.rules);
+
+    for(let i = 0; i < config.module.rules.length; i++) {
+      const a = config.module.rules[i];
+      console.log(a.test);
+      console.log(a.use && a.use.loader);
+      console.log(a.use && a.use.options);
+      console.log('===========');
+    }
 
     return config
   }

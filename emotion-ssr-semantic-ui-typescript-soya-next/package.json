@@ -1,0 +1,45 @@
+{
+  "name": "emotion-ssr-semantic-ui-typescript-soya-next",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "analyze": "BUNDLE_ANALYZE=both soya-next-scripts build",
+    "analyze:browser": "BUNDLE_ANALYZE=browser soya-next-scripts build",
+    "analyze:server": "BUNDLE_ANALYZE=server soya-next-scripts build",
+    "build": "soya-next-scripts build",
+    "dev": "soya-next-scripts dev",
+    "eject": "soya-next-scripts eject",
+    "export": "soya-next-scripts export",
+    "start": "soya-next-server",
+    "test": "soya-next-scripts test"
+  },
+  "dependencies": {
+    "@zeit/next-typescript": "^1.1.1",
+    "apollo-client": "2.4.7",
+    "config": "3.0.0",
+    "emotion": "^9.2.12",
+    "emotion-server": "^9.2.12",
+    "express": "4.16.4",
+    "graphql": "14.0.2",
+    "next": "7.0.2",
+    "prop-types": "15.6.2",
+    "react": "16.6.3",
+    "react-apollo": "2.3.1",
+    "react-cookie": "2.2.0",
+    "react-dom": "16.6.3",
+    "react-emotion": "^9.2.12",
+    "react-redux": "5.1.1",
+    "redux": "4.0.1",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^0.83.0",
+    "soya-next": "0.7.0",
+    "soya-next-server": "0.7.0"
+  },
+  "devDependencies": {
+    "@types/config": "^0.0.34",
+    "@types/next": "^7.0.5",
+    "@types/react": "^16.7.7",
+    "soya-next-scripts": "0.7.3",
+    "typescript": "^3.1.6"
+  }
+}
