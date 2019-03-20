@@ -2,5 +2,20 @@
   "presets": [
     "next/babel",
     "@zeit/next-typescript/babel"
+  ],
+  "plugins": [
+    ["module-resolver", {
+      "root": ["./"],
+      "extensions": [".ts", ".tsx", ".d.ts", ".js", ".jsx", ".es", ".es6", ".mjs"],
+      "alias": {
+        "@Actions": "./src/Actions",
+        "@Components": "./src/Components",
+        "@Constants": "./src/Constants",
+        "@Containers": "./src/Containers",
+        "@Reducers": "./src/Reducers",
+        "@Selectors": "./src/Selectors",
+        "@RootType": "./src/@RootType"
+      }
+    }]
   ]
 }
